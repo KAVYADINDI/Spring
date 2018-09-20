@@ -1,0 +1,9 @@
+package com.capgemini.bankApp.controller;
+
+public class BankAccountController {
+
+	public static void main(String args[])
+	{
+		
+	}
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="com.capgemini.bankApp.entities.BankAccount"/>
+<fullyQualifiedTypeName name="com.capgemini.bankApp.repository.BankAccountRepository"/>
+<fullyQualifiedTypeName name="com.capgemini.bankApp.repository.Impl.BankAccountRepositoryImpl"/>
+<fullyQualifiedTypeName name="com.capgemini.bankApp.service.BankAccountService"/>
+<fullyQualifiedTypeName name="com.capgemini.bankApp.exceptions.LowBalanceException"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.capgemini.bankApp.controller.BankAccountController"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+<fullyQualifiedTypeName name="com.capgemini.bankApp.config.AppConfig"/>
+</qualifiedTypeNameHistroy>

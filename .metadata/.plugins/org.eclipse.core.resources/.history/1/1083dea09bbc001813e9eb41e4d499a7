@@ -1,0 +1,5 @@
+package com.capgemini.bankApp.config;
+
+public class AppConfig {
+
+}

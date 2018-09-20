@@ -1,0 +1,49 @@
+package com.capgemini.bankApp.service.Impl;
+
+import com.capgemini.bankApp.repository.BankAccountRepository;
+import com.capgemini.bankApp.service.BankAccountService;
+
+public class BankAccountServiceImpl implements BankAccountService {
+
+	private BankAccountRepository bankRepository;
+	
+
+
+	public BankAccountServiceImpl(BankAccountRepository bankRepository) {
+		super();
+		this.bankRepository = bankRepository;
+	}
+
+	@Override
+	public double getBalance(long accountId) {
+		return bankRepository.getBalance(accountId);
+	}
+
+	@Override
+	public double withdraw(long accountId, double amount) {
+		double newBalance = getBalance(accountId) - amount;
+		if (newBalance >= 0) {
+			bankRepository.updateBalance(accountId, newBalance);
+			return newBalance;
+		}
+		return -1;
+	}
+
+	@Override
+	public double deopsit(long accountId, double amount) {
+		double newBalance = getBalance(accountId) + amount;
+		if (bankRepository.updateBalance(accountId, newBalance))
+			return newBalance;
+		return -1;
+	}
+
+	@Override
+	public double fundTransfer(long fromAccount, long toAccount, double balance) {
+		if (withdraw(fromAccount, balance) >= 0) {
+			deopsit(toAccount, balance);
+			return true;
+		}
+	}
+	}
+
+}

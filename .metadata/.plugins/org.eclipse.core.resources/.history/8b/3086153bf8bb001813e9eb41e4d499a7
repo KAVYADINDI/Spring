@@ -1,0 +1,5 @@
+package com.capgemini.bankApp.controller;
+
+public class BankAccountController {
+
+}
